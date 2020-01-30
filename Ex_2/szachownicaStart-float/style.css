@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.board {
+    width: 30vw;
+    border: 10px solid black;
+    margin: 100px auto;
+}
+
+span {
+    width: 50%;
+    height: calc(15vw - 10px);
+    float: left;
+}
+
+span:first-child,
+span:last-child {
+    background-color: red;
+}
+
+h1 {
+    text-align: center;
+}

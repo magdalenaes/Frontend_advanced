@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.board {
+    width: 40%;
+    height: 40vw;
+    position: absolute;
+    border: 10px solid black;
+    left: calc(50% - 20% - 10px);
+    top: calc(50% - 20vw - 10px);
+}
+
+span {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+}
+
+span:nth-child(1) {
+    top: 0;
+    left: 0;
+    background-color: red;
+}
+
+span:nth-child(4) {
+    top: 50%;
+    left: 50%;
+    background-color: red;
+}
+
+h1 {
+    position: relative;
+    text-align: center;
+    top: 90vh;
+    line-height: 10vh;
+}
