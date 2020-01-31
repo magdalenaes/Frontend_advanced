@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    width: 10vw;
+    position: absolute;
+    top: 10%;
+    left: calc(50% - 5vh);
+    background-color: white;
+    padding: 20px 0;
+    border: 2px solid black;
+    transition: 0.5s linear;
+    /* move right and down
+    /* transition: left 1s, top 1s 1s, width 1s, height 1s; */
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+.square {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    /* move right and down*/
+    transition: left 1s, top 1s 1s, width 1s, height 1s;
+    /* move diagonally */
+    /* transition: 4s linear; */
+}
+
+button:hover ~ .square {
+    width: 70px;
+    height: 70px;
+    top: calc(100% - 70px);
+    left: calc(100% - 70px);   
+}
