@@ -106,6 +106,10 @@ nav.mobile {
     header {
         width: calc(100% - 72px);
     }
+
+    section h1 {
+        font-size: 20px;
+    }
 }
 
 
