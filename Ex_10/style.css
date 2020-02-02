@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --textSize: 80px;
+}
+button {
+    font-size: 40px;
+}
+
+h1 {
+    font-family: arial;
+    font-size: var(--textSize);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s linear;
+    border: 0 px solid black; 
+}
+
+/* .larger:hover~h1 {
+    font-size: calc(var(--textSize)*2);
+} */
+
+/* .smaller:hover~h1 {
+    font-size: calc(var(--textSize)/2);
+} */
+
+/* .border:hover~h1 {
+    border: 15px solid black;
+} */
+
+h1.big {
+    font-size: calc(var(--textSize)*2);
+}
+
+h1.small {
+    font-size: calc(var(--textSize)/2);
+}
+
+h1.addBorder {
+    border: 15px solid black;
+}
