@@ -1,0 +1,99 @@
+span {
+    position: absolute;
+    top: 10vh;
+    left: 10vh;
+    background-color: brown;
+    display: inline-block;
+    color: white;
+    padding: 20px;  
+    cursor: pointer; 
+    text-transform: uppercase;
+}
+
+div {
+    position: absolute;
+    background-color: brown;
+    height: 0;
+    width: 0;
+    top: 90%;
+    left: 10%;
+    transition: 2s;
+}
+
+div:nth-of-type(2) {
+    transition-delay: 0.3s;
+}
+
+div:nth-of-type(3) {
+    transition-delay: 0.5s;
+}
+
+div:nth-of-type(4) {
+    transition-delay: 0.7s;
+}
+
+div:nth-of-type(5) {
+    transition-delay: 0.9s;
+}
+
+div:nth-of-type(6) {
+    transition-delay: 1.1s;
+}
+
+span:hover ~ div:nth-of-type(1) {
+    top: 50%;
+    left: 50%;
+    width: 50vh;
+    height: 30vh;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+span:hover ~ div:nth-of-type(2) {
+    top: calc(50% - 15vh);
+    left: 50%;
+    width: calc(50vh/1.41);
+    height: calc(50vh/1.41);
+    background-color: black;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+span:hover ~ div:nth-of-type(3) {
+    top: calc(50% + 7.5vh);
+    left: 50%;
+    width: 12vh;
+    height: 15vh;
+    background-color: darkgrey;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+span:hover ~ div:nth-of-type(4) {
+    top: calc(50% - 25vh);
+    left: calc(50% + 15vh);
+    width: 4vh;
+    height: 10vh;
+    background-color: grey;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+span:hover ~ div:nth-of-type(5) {
+    top: calc(50% - 5vh);
+    left: calc(50% - 15vh);
+    width: 10vh;
+    height: 8vh;
+    background-color: royalblue;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+span:hover ~ div:nth-of-type(6) {
+    top: calc(50% - 5vh);
+    left: calc(50% + 15vh);
+    width: 10vh;
+    height: 8vh;
+    background-color: royalblue;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
