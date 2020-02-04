@@ -24,10 +24,19 @@ button span {
     line-height: 100px;
     position: relative;
     top: 0;
+    left: 0;
     transition: .3s linear;
 }
 
-button:hover span {
+button span:nth-child(2) {
     top: -100px;
+    left: 360px;
+}
 
+button:hover span:nth-child(1) {
+    left: -360px;
+}
+
+button:hover span:nth-child(2) {
+    left: 0;
 }
